@@ -1,4 +1,4 @@
-package linkedList;
+package singleLL;
 
 public class firstLinkedlist {
     //Node class

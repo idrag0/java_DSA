@@ -1,8 +1,8 @@
-package linkedList;
+package singleLL;
 
-public class search_linkedList {
-     //Node class
-     public static class Node{
+public class search_recursive {
+
+    public static class Node{
         int data;
         Node next;
 
@@ -92,8 +92,27 @@ public class search_linkedList {
         return -1;
     }
 
+     //recursive Search
+     public static int helper(Node head,int key){
+        if(head== null){
+            return -1;
+        }
 
+        if(head.data == key){
+            return 0;
+        }
 
+        int idx = helper(head.next,key);
+            if(idx == -1){
+                return -1;
+            }
+           
+        return idx+1;
+    }
+   //recursive search
+   public static int recSearch(int key){
+       return helper(head, key);
+   }
 
     public static void main(String[] args) {
         add_elements obj_link = new add_elements();
@@ -114,9 +133,17 @@ public class search_linkedList {
 
         System.out.println(obj_link.size);
 
+        System.out.println();
 
         System.out.println(obj_link.itrSearch(3));
         System.out.println(obj_link.itrSearch(4));
 
+        System.out.println();
+
+
+        System.out.println(obj_link.recSearch(4));
+        System.out.println(obj_link.recSearch(2));
+
     }
 }
+
