@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <script>
+    function calculateMarks() {
+      // Get the selected answers
+      var answer1 = document.querySelector('input[name="question1"]:checked').value;
+      var answer2 = document.querySelector('input[name="question2"]:checked').value;
+      var answer3 = document.querySelector('input[name="question3"]:checked').value;
+      var answer4 = document.querySelector('input[name="question4"]:checked').value;
+
+      // Calculate the total marks
+      var totalMarks = 0;
+      if (answer1 === 'option1') {
+        totalMarks += 1;
+      }
+      if (answer2 === 'option3') {
+        totalMarks += 1;
+      }
+      if (answer3 === 'option3') {
+        totalMarks += 1;
+      }
+      if (answer4 === 'option3' || answer4 === 'option2') {
+        totalMarks += 1;
+      }
+
+      // Display the total marks
+      document.getElementById('marks').innerHTML = 'Total Marks: ' + totalMarks;
+    }
+  </script>
+</head>
+<body>
+  <h1>Quiz</h1>
+  <form>
+    <h3>Question 1:</h3>
+    <input type="radio" name="question1" value="option1"> Option 1<br>
+    <input type="radio" name="question1" value="option2"> Option 2<br>
+    <input type="radio" name="question1" value="option3"> Option 3<br>
+
+    <h3>Question 2:</h3>
+    <input type="radio" name="question2" value="option1"> Option 1<br>
+    <input type="radio" name="question2" value="option2"> Option 2<br>
+    <input type="radio" name="question2" value="option3"> Option 3<br>
+
+    <h3>Question 3:</h3>
+    <input type="checkbox" name="question3" value="option1"> Option 1<br>
+    <input type="checkbox" name="question3" value="option2"> Option 2<br>
+    <input type="checkbox" name="question3" value="option3"> Option 3<br>
+
+    <h3>Question 4:</h3>
+    <input type="checkbox" name="question4" value="option1"> Option 1<br>
+    <input type="checkbox" name="question4" value="option2"> Option 2<br>
+    <input type="checkbox" name="question4" value="option3"> Option 3<br>
+
+    <br>
+    <button type="button" onclick="calculateMarks()">Submit</button>
+  </form>
+
+  <div id="marks"></div>
+</body>
+</html>

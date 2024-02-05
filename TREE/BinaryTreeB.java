@@ -1,6 +1,6 @@
-package BinaryTree.Traversal;
+package TREE;
 
-public class inoder_tree {
+public class BinaryTreeB {
     static class Node{
         int data;
         Node left;
@@ -28,22 +28,14 @@ public class inoder_tree {
 
             return newNode;
          }
-
-         public static void inoder(Node root){
-            if(root == null){
-                return;
-            }
-            inoder(root.left);
-            System.out.print(root.data+" ");
-            inoder(root.right);
-         }
     }
 
     public static void main(String[] args) {
         int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        BinaryTree tree = new BinaryTree();
-        Node root = tree.buildTree(nodes);
+        Node root = BinaryTree.buildTree(nodes);
 
-        tree.inoder(root);
+        System.out.println(root.data);
+        System.out.println(root.left.data);
+        System.out.println(root.right.data);
     }
 }

@@ -1,4 +1,4 @@
-package BinaryTree;
+package TREE;
 
 public class heightTree {
     static class Node{
@@ -13,7 +13,7 @@ public class heightTree {
         }
     }
 
-    // height of tree
+    // height of tree recursively
     public static int height(Node root){
         if(root == null){
             return 0;
@@ -24,7 +24,7 @@ public class heightTree {
         return Math.max(leftH, rightH)+1;
     }
 
-    // count of tree
+    // count of tree recursively
     public static int count(Node root){
         if(root == null){
             return 0;
@@ -35,7 +35,7 @@ public class heightTree {
         return 1+leftH+rightH ;
     }
 
-    //sum of nodes of tree
+    //sum of nodes of tree recursively
     public static int sum(Node root){
         if(root == null){
             return 0;

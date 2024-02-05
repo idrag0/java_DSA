@@ -1,4 +1,4 @@
-package BinaryTree.Traversal;
+package TREE.Traversal;
 
 import java.util.Queue;
 

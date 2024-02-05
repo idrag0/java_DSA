@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation</title>
+    <script>
+        // Task 1: Create a new paragraph element and append it to the body
+        var paragraph = document.createElement("p");
+        paragraph.textContent = "This is a new paragraph";
+        document.body.appendChild(paragraph);
+
+        // Task 2: Change the background color of the body
+        document.body.style.backgroundColor = "lightblue";
+
+        // Task 3: Add a click event listener to the paragraph
+        paragraph.addEventListener("click", function() {
+            alert("You clicked the paragraph!");
+        });
+    </script>
+</head>
+<body>
+    <h1>DOM Manipulation Example</h1>
+</body>
+</html>

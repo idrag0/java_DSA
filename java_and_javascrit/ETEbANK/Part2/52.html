@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Selection</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Form Selection</h1>
+
+    <form id="myForm">
+        <label for="checkbox1">
+            <input type="checkbox" id="checkbox1" name="checkbox" value="Option 1"> Option 1
+        </label>
+
+        <label for="checkbox2">
+            <input type="checkbox" id="checkbox2" name="checkbox" value="Option 2"> Option 2
+        </label>
+
+        <label for="radio1">
+            <input type="radio" id="radio1" name="radio" value="Radio Option 1"> Radio Option 1
+        </label>
+
+        <label for="radio2">
+            <input type="radio" id="radio2" name="radio" value="Radio Option 2"> Radio Option 2
+        </label>
+
+        <label for="textInput">Enter Text:</label>
+        <input type="text" id="textInput" name="textInput">
+
+        <button type="button" onclick="showSelections()">Show Selections</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function showSelections() {
+            // Get the selected values
+            var selectedCheckboxes = getSelectedValues('checkbox');
+            var selectedRadio = getSelectedValues('radio');
+            var textInputValue = document.getElementById('textInput').value;
+
+            // Display the result
+            var resultText = `Selected Checkboxes: ${selectedCheckboxes.join(', ')}<br>`;
+            resultText += `Selected Radio: ${selectedRadio}<br>`;
+            resultText += `Text Input: ${textInputValue}`;
+
+            document.getElementById('result').innerHTML = resultText;
+        }
+
+        function getSelectedValues(name) {
+            // Get all elements with the specified name (checkboxes or radio buttons)
+            var elements = document.getElementsByName(name);
+            var selectedValues = [];
+
+            // Loop through elements to find selected ones
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].checked) {
+                    selectedValues.push(elements[i].value);
+                }
+            }
+
+            return selectedValues;
+        }
+    </script>
+
+</body>
+</html>

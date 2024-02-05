@@ -1,4 +1,4 @@
-package BinaryTree.Traversal;
+package TREE.Traversal;
 
 public class postoderTree {
     static class Node{
