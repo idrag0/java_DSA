@@ -161,7 +161,7 @@ public class add_elements {
 
 
 
-
+  
     public static void main(String[] args) {
         add_elements obj_link = new add_elements();
         
@@ -170,6 +170,7 @@ public class add_elements {
         obj_link.printLink();
         obj_link.addFirst(1);
         obj_link.printLink();
+        System.out.println(size);
 
         
 

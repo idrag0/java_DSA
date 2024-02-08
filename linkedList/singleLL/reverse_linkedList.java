@@ -80,7 +80,7 @@ public class reverse_linkedList {
         prev.next= prev.next.next;
     }
 
-    pu
+    
 
 }
 
