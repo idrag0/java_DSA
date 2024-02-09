@@ -1,5 +1,5 @@
 
-package QUEUE.DeQueue;
+package ETE_Exam;
 
 public class Deque {
     private int[] deque;
