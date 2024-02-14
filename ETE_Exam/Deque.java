@@ -7,6 +7,7 @@ public class Deque {
     private int rear;
     private int size;
     
+    
     public Deque(int capacity) {
         deque = new int[capacity];
         front = -1;
