@@ -14,7 +14,7 @@ public class circular {
     static Node tail;
     static int size=0;
 
-    public void add(int data){
+   public void add(int data){
         Node newNode = new Node(data);
         if(head==null){
             head=tail=newNode;

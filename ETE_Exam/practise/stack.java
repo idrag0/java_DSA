@@ -9,7 +9,30 @@ public class stack {
         }
     }
 
-    static Node top;
-    static Node tail
+    public static class Stack{
+        static Node top;
+
+        public static boolean isEmpty(){
+            return top == null;
+        }
+
+        public static boolean isFull(){
+            return top != null;
+        }
+
+        public static void push(int data){
+            Node newNode = new Node(data);
+            if(isEmpty()){
+                top=newNode;
+            }
+
+            newNode.next = top;
+            top= newNode;
+        }
+
+        public static void pop(){
+            
+        }
+    }
 
 }
