@@ -123,4 +123,23 @@ public class Deque {
     public int size() {
         return size;
     }
+
+    public static void main(String[] args) {
+        Deque dq = new Deque(5);
+        
+        dq.insertRear(5);
+        dq.insertRear(10);
+        
+        System.out.println("Rear element: " + dq.getRear());
+        
+        dq.deleteRear();
+        System.out.println("Rear element after deletion: " + dq.getRear());
+        
+        dq.insertFront(15);
+        
+        System.out.println("Front element: " + dq.getFront());
+        
+        dq.deleteFront();
+        System.out.println("Front element after deletion: " + dq.getFront());
+    }
 }
