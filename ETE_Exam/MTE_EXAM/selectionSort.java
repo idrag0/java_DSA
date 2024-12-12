@@ -1,4 +1,4 @@
-package exam_practise;
+package ETE_Exam.MTE_EXAM;
 
 public class selectionSort {
     public static void Selection(int arr[]){

@@ -1,3 +1,4 @@
+package ETE_Exam.MTE_EXAM.recursion;
 public class poduct_of_digit {
     public static int calculateProduct(int[] arr) {
         return calculateProductHelper(arr, 0);

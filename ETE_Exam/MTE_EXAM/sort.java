@@ -1,4 +1,4 @@
-package MTE_EXAM;
+package ETE_Exam.MTE_EXAM;
 
 public class sort {
     public static void bubble(int arr[]){

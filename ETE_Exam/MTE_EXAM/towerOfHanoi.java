@@ -1,4 +1,4 @@
-package exam_practise;
+package ETE_Exam.MTE_EXAM;
 
 public class towerOfHanoi {
     public static void hanoi(int n,char S,char Tr,char Au){

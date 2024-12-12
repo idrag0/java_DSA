@@ -68,7 +68,7 @@ public class levelOderTree {
         Node root = tree.buildTree(nodes); 
 
         tree.level(root);
-
+ 
 
     }
 }

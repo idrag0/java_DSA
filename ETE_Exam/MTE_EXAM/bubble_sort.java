@@ -1,4 +1,4 @@
-package exam_practise;
+package ETE_Exam.MTE_EXAM;
 import java.util.*;
 
 public class bubble_sort {

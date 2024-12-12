@@ -1,4 +1,4 @@
-package exam_practise.recursion;
+package ETE_Exam.MTE_EXAM.recursion;
 
 public class fabonacci {
 public static int fab(int n){
