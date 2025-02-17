@@ -3,9 +3,9 @@ import java.util.*;
 
 public class bfs_DFS_Tranversal {
     public class Edge{
-        int src;
-        int dest;
-        int wt;
+        int src;  // source
+        int dest; // destination
+        int wt;   // weigth of edge
         
         public Edge(int s,int d,int w){
             this.src = s;

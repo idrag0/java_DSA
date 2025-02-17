@@ -98,25 +98,6 @@ public class linnkedList {
         return val;
     }
 
-    public void removeATindex(int idx){
-        if(idx<0 || idx >= size()){
-            System.out.println("Invalid Index");
-            return;
-        }
-        if(idx == 0){
-            removeFirst();
-            return;
-        }
-
-        Node temp = head;
-        int i=0;
-        while(i<idx-1){
-            temp=temp.next;
-            i++;
-        }
-        
-
-    }
 
     public void removeAtIndex(int index) {
         if (index < 0 || index >= size()) {
