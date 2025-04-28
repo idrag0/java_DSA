@@ -1,3 +1,4 @@
+package ETE_Exam;
 import java.util.Stack;
 
 public class Q42 {

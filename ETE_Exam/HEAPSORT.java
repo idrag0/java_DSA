@@ -1,4 +1,4 @@
-package Heaps;
+package ETE_Exam;
 
 public class HEAPSORT {
 

@@ -1,3 +1,4 @@
+package arrayList;
 import java.util.Stack;
 
 public class ValidParenthesis {

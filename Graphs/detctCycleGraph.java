@@ -51,7 +51,7 @@ public class detctCycleGraph {
                     return true;
                 }
             }else if(visited[e.dest] && e.dest != parent){
-                return true;
+                return true; 
             }
         }
         return false;

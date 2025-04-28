@@ -1,3 +1,4 @@
+package ETE_Exam.practise;
 public class linchedlist {
     public class Node{
         int data;

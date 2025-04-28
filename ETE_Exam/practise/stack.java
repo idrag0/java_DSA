@@ -1,3 +1,4 @@
+package ETE_Exam.practise;
 public class stack {
     class Node{
         int data;
