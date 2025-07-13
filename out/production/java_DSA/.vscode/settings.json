@@ -1,14 +1,11 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "java": true,
-        "cpp": false,
-        "css": true,
-        "javascript": true,
-        "html": false
+        "java": false,
+        "cpp": false
     }
 }

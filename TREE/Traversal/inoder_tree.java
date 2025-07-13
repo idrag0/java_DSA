@@ -40,7 +40,7 @@ public class inoder_tree {
     }
 
     public static void main(String[] args) {
-        int nodes[] = {1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        int nodes[] = {1,2,3,4,5,7,8};
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
 
